@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
 
 type Theme = 'light' | 'dark';
@@ -10,7 +9,8 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export const ThemeProvider = ({ children }: { children: ReactNode }) => {
+// Fix: Updated props definition to use React.PropsWithChildren to resolve a TypeScript error in App.tsx.
+export const ThemeProvider = ({ children }: React.PropsWithChildren<{}>) => {
   const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {

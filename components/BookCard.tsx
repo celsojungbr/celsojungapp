@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import type { Book } from '../types';
@@ -10,7 +9,7 @@ interface BookCardProps {
 const BookCard: React.FC<BookCardProps> = ({ book }) => {
   return (
     <div className="group relative">
-        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden aspect-w-2 aspect-h-3">
+        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden aspect-[2/3]">
           <img
             src={book.coverImage}
             alt={book.title}

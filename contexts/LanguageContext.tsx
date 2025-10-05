@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 import { translations } from '../constants';
 
@@ -12,7 +11,8 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export const LanguageProvider = ({ children }: { children: ReactNode }) => {
+// Fix: Updated props definition to use React.PropsWithChildren to resolve a TypeScript error in App.tsx.
+export const LanguageProvider = ({ children }: React.PropsWithChildren<{}>) => {
   const [language, setLanguage] = useState<Language>('en');
 
   const t = (key: keyof typeof translations.en): string => {

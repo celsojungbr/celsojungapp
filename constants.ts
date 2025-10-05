@@ -1,4 +1,3 @@
-
 export const translations = {
   en: {
     // Header
@@ -31,6 +30,26 @@ export const translations = {
     manageBooks: "Manage Books",
     uploadBook: "Upload Book",
     aiTools: "AI Tools",
+    addBook: "Add New Book",
+    editBook: "Edit Book",
+    bookTitle: "Title",
+    bookAuthor: "Author",
+    coverImageUrl: "Cover Image URL",
+    shortDescription: "Short Description",
+    longDescription: "Long Description",
+    amazonLink: "Amazon Link",
+    awards: "Awards (comma-separated)",
+    mediaMentions: "Media Mentions (format: source,link;source,link)",
+    saveChanges: "Save Changes",
+    cancel: "Cancel",
+    // Contact Page
+    contactIntro: "Have a question, a comment, or a collaboration proposal? We'd love to hear from you. Fill out the form below or send us an email directly.",
+    name: "Name",
+    email: "Email",
+    subject: "Subject",
+    message: "Message",
+    sendMessage: "Send Message",
+    contactInformation: "Contact Information",
   },
   pt: {
     // Header
@@ -63,5 +82,25 @@ export const translations = {
     manageBooks: "Gerenciar Livros",
     uploadBook: "Carregar Livro",
     aiTools: "Ferramentas de IA",
+    addBook: "Adicionar Novo Livro",
+    editBook: "Editar Livro",
+    bookTitle: "Título",
+    bookAuthor: "Autor",
+    coverImageUrl: "URL da Imagem de Capa",
+    shortDescription: "Descrição Curta",
+    longDescription: "Descrição Longa",
+    amazonLink: "Link da Amazon",
+    awards: "Prêmios (separados por vírgula)",
+    mediaMentions: "Menções na Mídia (formato: fonte,link;fonte,link)",
+    saveChanges: "Salvar Alterações",
+    cancel: "Cancelar",
+    // Contact Page
+    contactIntro: "Tem uma pergunta, um comentário ou uma proposta de colaboração? Adoraríamos ouvir de você. Preencha o formulário abaixo ou envie-nos um e-mail diretamente.",
+    name: "Nome",
+    email: "E-mail",
+    subject: "Assunto",
+    message: "Mensagem",
+    sendMessage: "Enviar Mensagem",
+    contactInformation: "Informações de Contato",
   },
 };

@@ -11,6 +11,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import BooksListPage from './pages/BooksListPage';
 import BookDetailPage from './pages/BookDetailPage';
+import ContactPage from './pages/ContactPage';
 import ReaderPage from './pages/user/ReaderPage';
 
 // User Dashboard Pages
@@ -24,6 +25,7 @@ import AdminDashboardPage from './pages/admin/AdminDashboardPage';
 import AdminBooksPage from './pages/admin/AdminBooksPage';
 import AdminUploadPage from './pages/admin/AdminUploadPage';
 import AdminToolsPage from './pages/admin/AdminToolsPage';
+import AdminBookFormPage from './pages/admin/AdminBookFormPage';
 
 function App() {
   return (
@@ -39,6 +41,7 @@ function App() {
               <Route path="about" element={<AboutPage />} />
               <Route path="books" element={<BooksListPage />} />
               <Route path="books/:id" element={<BookDetailPage />} />
+              <Route path="contact" element={<ContactPage />} />
             </Route>
 
             {/* Reader page is standalone */}
@@ -56,6 +59,8 @@ function App() {
             <Route path="/admin" element={<AdminDashboardLayout />}>
               <Route path="dashboard" element={<AdminDashboardPage />} />
               <Route path="books" element={<AdminBooksPage />} />
+              <Route path="books/new" element={<AdminBookFormPage />} />
+              <Route path="books/edit/:id" element={<AdminBookFormPage />} />
               <Route path="upload" element={<AdminUploadPage />} />
               <Route path="tools" element={<AdminToolsPage />} />
             </Route>
